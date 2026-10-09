@@ -131,6 +131,8 @@ h1 .viewer-title { color: #a8becb; font-weight: 450; }
 }
 
 #map { position: absolute; inset: 0; background: #08141e; }
+/* Apply the dark theme only to the raster basemap, not surge gauges or storm tracks. */
+.leaflet-tile.osm-dark-tiles { filter: grayscale(1) invert(1) brightness(.72) contrast(1.12); }
 .leaflet-container { font-family: inherit; }
 .leaflet-control-attribution { background: rgba(5, 15, 22, 0.8) !important; color: #94a9b5; }
 .leaflet-control-attribution a { color: #76bdce; }
